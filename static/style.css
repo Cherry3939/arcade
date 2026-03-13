@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "IBM VGA";   /* sorry idk what font to use */
+    src: url("PxPlus_IBM_VGA_8x16.ttf");     
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "IBM VGA";
+}
+
+.title{
+    text-align: center;
+    font-family: "IBM VGA";
+    font-size: 50px;
+}
+
+.gamegrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.gamecard {
+    border: 1px solid white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 150px;
+    background-color: #10001a; /* Very deep purple */
+    border: 1px solid #bc13fe; /* Bright neon purple border */
+    color: #e0b0ff;            /* Softer mauve text */
+    text-transform: uppercase; /* Keeps the terminal feel */
+}
